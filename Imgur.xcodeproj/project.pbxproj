@@ -18,6 +18,7 @@
 		495ED042215F8E0D00203CB2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED041215F8E0D00203CB2 /* Environment.swift */; };
 		495ED044215F918900203CB2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED043215F918900203CB2 /* Request.swift */; };
 		495ED046215FA30B00203CB2 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED045215FA30B00203CB2 /* Dispatcher.swift */; };
+		495ED049215FB77B00203CB2 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED048215FB77B00203CB2 /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		495ED041215F8E0D00203CB2 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		495ED043215F918900203CB2 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		495ED045215FA30B00203CB2 /* Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
+		495ED048215FB77B00203CB2 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,11 +94,20 @@
 		495ED040215F8DE700203CB2 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				495ED047215FB76A00203CB2 /* Models */,
 				495ED041215F8E0D00203CB2 /* Environment.swift */,
 				495ED043215F918900203CB2 /* Request.swift */,
 				495ED045215FA30B00203CB2 /* Dispatcher.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		495ED047215FB76A00203CB2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				495ED048215FB77B00203CB2 /* Image.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495ED049215FB77B00203CB2 /* Image.swift in Sources */,
 				495ED02D215F881400203CB2 /* Imgur.xcdatamodeld in Sources */,
 				495ED027215F881400203CB2 /* ViewController.swift in Sources */,
 				495ED046215FA30B00203CB2 /* Dispatcher.swift in Sources */,
