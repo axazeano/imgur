@@ -24,6 +24,6 @@ final class Environment {
     
     init(name: String, host: String) {
         self.name = name
-        self.host = name
+        self.host = host
     }
 }
