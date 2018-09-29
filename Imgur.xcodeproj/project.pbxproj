@@ -22,6 +22,7 @@
 		495ED04B215FC05D00203CB2 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED04A215FC05D00203CB2 /* Tag.swift */; };
 		495ED04D215FD34F00203CB2 /* Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED04C215FD34F00203CB2 /* Basic.swift */; };
 		495ED04F215FD8B100203CB2 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED04E215FD8B100203CB2 /* Album.swift */; };
+		495ED051215FEFC200203CB2 /* GalleryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED050215FEFC200203CB2 /* GalleryImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		495ED04A215FC05D00203CB2 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		495ED04C215FD34F00203CB2 /* Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basic.swift; sourceTree = "<group>"; };
 		495ED04E215FD8B100203CB2 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		495ED050215FEFC200203CB2 /* GalleryImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				495ED04A215FC05D00203CB2 /* Tag.swift */,
 				495ED04C215FD34F00203CB2 /* Basic.swift */,
 				495ED04E215FD8B100203CB2 /* Album.swift */,
+				495ED050215FEFC200203CB2 /* GalleryImage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			files = (
 				495ED04B215FC05D00203CB2 /* Tag.swift in Sources */,
 				495ED049215FB77B00203CB2 /* Image.swift in Sources */,
+				495ED051215FEFC200203CB2 /* GalleryImage.swift in Sources */,
 				495ED02D215F881400203CB2 /* Imgur.xcdatamodeld in Sources */,
 				495ED027215F881400203CB2 /* ViewController.swift in Sources */,
 				495ED046215FA30B00203CB2 /* Dispatcher.swift in Sources */,
