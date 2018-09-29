@@ -15,6 +15,7 @@
 		495ED032215F881700203CB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495ED030215F881700203CB2 /* LaunchScreen.storyboard */; };
 		495ED03A215F8A3D00203CB2 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 495ED039215F8A3D00203CB2 /* Cartfile */; };
 		495ED03F215F8CBD00203CB2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495ED03E215F8CBD00203CB2 /* Alamofire.framework */; };
+		495ED042215F8E0D00203CB2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED041215F8E0D00203CB2 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		495ED033215F881700203CB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		495ED039215F8A3D00203CB2 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		495ED03E215F8CBD00203CB2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		495ED041215F8E0D00203CB2 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		495ED023215F881400203CB2 /* Imgur */ = {
 			isa = PBXGroup;
 			children = (
+				495ED040215F8DE700203CB2 /* API */,
 				495ED024215F881400203CB2 /* AppDelegate.swift */,
 				495ED026215F881400203CB2 /* ViewController.swift */,
 				495ED028215F881400203CB2 /* Main.storyboard */,
@@ -80,6 +83,14 @@
 				495ED03E215F8CBD00203CB2 /* Alamofire.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		495ED040215F8DE700203CB2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				495ED041215F8E0D00203CB2 /* Environment.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 			files = (
 				495ED02D215F881400203CB2 /* Imgur.xcdatamodeld in Sources */,
 				495ED027215F881400203CB2 /* ViewController.swift in Sources */,
+				495ED042215F8E0D00203CB2 /* Environment.swift in Sources */,
 				495ED025215F881400203CB2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
