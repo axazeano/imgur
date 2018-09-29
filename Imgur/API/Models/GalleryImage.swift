@@ -16,8 +16,8 @@ struct GalleryImage: Codable {
     /// The title of the image.
     let title: String
     
-    /// Description of the image.
-    let description: String
+    /// OTPIONAL, Description of the image.
+    let description: String?
     
     /// Time inserted into the gallery, epoch time
     let datetime: Date
@@ -59,16 +59,16 @@ struct GalleryImage: Codable {
     let mp4Size: Int?
     
     /// OPTIONAL, Whether the image has a looping animation. Only available if the image is animated and type is 'image/gif'.
-    let looping: Bool
+    let looping: Bool?
     
     /// The current user's vote on the album. null if not signed in or if the user hasn't voted on it.
-    let vote: String
+    let vote: String?
     
     /// Indicates if the current user favorited the image. Defaults to false if not signed in.
     let favorite: Bool
     
     /// Indicates if the image has been marked as nsfw or not. Defaults to null if information is not available.
-    let nsfw: Bool
+    let nsfw: Bool?
     
     /// Number of comments on the gallery image.
     let commentCount: Int
@@ -79,30 +79,30 @@ struct GalleryImage: Codable {
     /// Topic ID of the gallery image.
     let topicId: Int
     
-    /// If the image has been categorized by our backend then this will contain the section the image belongs in. (funny, cats, adviceanimals, wtf, etc)
-    let section: String
+    /// OPTIONAL, If the image has been categorized by our backend then this will contain the section the image belongs in. (funny, cats, adviceanimals, wtf, etc)
+    let section: String?
     
     /// The username of the account that uploaded it, or null.
-    let accountUrl: String
+    let accountUrl: String?
     
     /// The account ID of the account that uploaded it, or null.
-    let accountId: Int
+    let accountId: Int?
     
     /// Upvotes for the image
-    let ups: Int
+    let ups: Int?
     
     /// Number of downvotes for the image
-    let downs: Int
+    let downs: Int?
     
     /// Upvotes minus downvotes
-    let points: Int
+    let points: Int?
     
     /// Imgur popularity score
-    let score: Int
+    let score: Int?
     
     /// If it's an album or not
-    let isAlbum: Bool
+    let isAlbum: Bool?
     
     /// Indicates if the image is in the most viral gallery or not.
-    let inMostViral: Bool
+    let inMostViral: Bool?
 }

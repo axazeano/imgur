@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Basic<T>: Codable where T: Codable {
+struct Basic<T>: Decodable where T: Decodable {
     let data: T
     let success: Bool
     let status: Int

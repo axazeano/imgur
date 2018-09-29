@@ -12,14 +12,14 @@ struct Image: Codable {
     /// The ID for the image
     let id: String
     
-    /// The title of the image.
-    let title: String
+    /// OPTIONAL, The title of the image.
+    let title: String?
     
-    /// Description of the image.
-    let description: String
+    /// OPTIONAL, Description of the image.
+    let description: String?
     
     /// Time uploaded, epoch time
-    let datetiem: Date
+    let datetime: Date
     
     /// Image MIME type.
     let type: String
@@ -48,8 +48,8 @@ struct Image: Codable {
     /// OPTIONAL, the original filename, if you're logged in as the image owner
     let name: String?
     
-    /// If the image has been categorized by our backend then this will contain the section the image belongs in. (funny, cats, adviceanimals, wtf, etc)
-    let section: String
+    /// OPTIONAL, If the image has been categorized by our backend then this will contain the section the image belongs in. (funny, cats, adviceanimals, wtf, etc)
+    let section: String?
     
     /// The direct link to the the image. (Note: if fetching an animated GIF that was over 20MB in original size, a .gif thumbnail will be returned)
     let link: String
@@ -69,12 +69,12 @@ struct Image: Codable {
     /// Indicates if the current user favorited the image. Defaults to false if not signed in.
     let favorite: Bool
     
-    /// Indicates if the image has been marked as nsfw or not. Defaults to null if information is not available.
-    let nsfw: Bool
+    /// OPTIONAL, Indicates if the image has been marked as nsfw or not. Defaults to null if information is not available.
+    let nsfw: Bool?
     
-    /// The current user's vote on the album. null if not signed in, if the user hasn't voted on it, or if not submitted to the gallery.
-    let vote: String
+    /// OPTIONAL, The current user's vote on the album. null if not signed in, if the user hasn't voted on it, or if not submitted to the gallery.
+    let vote: String?
     
     /// True if the image has been submitted to the gallery, false if otherwise.
-    let inGalery: Bool
+    let inGallery: Bool
 }

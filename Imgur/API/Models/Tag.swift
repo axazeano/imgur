@@ -8,13 +8,14 @@
 
 import Foundation
 
-struct Tags: Codable {
+struct Tags: Decodable {
     let tags: [Tag]
 }
 
-struct Tag: Codable {
+struct Tag: Decodable {
     let name: String
     let followers: Int
     let totalItems: Int
     let following: Bool
+    let items: [GalleryItem]
 }
