@@ -19,6 +19,8 @@
 		495ED044215F918900203CB2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED043215F918900203CB2 /* Request.swift */; };
 		495ED046215FA30B00203CB2 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED045215FA30B00203CB2 /* Dispatcher.swift */; };
 		495ED049215FB77B00203CB2 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED048215FB77B00203CB2 /* Image.swift */; };
+		495ED04B215FC05D00203CB2 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED04A215FC05D00203CB2 /* Tag.swift */; };
+		495ED04D215FD34F00203CB2 /* Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED04C215FD34F00203CB2 /* Basic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		495ED043215F918900203CB2 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		495ED045215FA30B00203CB2 /* Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
 		495ED048215FB77B00203CB2 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		495ED04A215FC05D00203CB2 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		495ED04C215FD34F00203CB2 /* Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				495ED048215FB77B00203CB2 /* Image.swift */,
+				495ED04A215FC05D00203CB2 /* Tag.swift */,
+				495ED04C215FD34F00203CB2 /* Basic.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -205,10 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495ED04B215FC05D00203CB2 /* Tag.swift in Sources */,
 				495ED049215FB77B00203CB2 /* Image.swift in Sources */,
 				495ED02D215F881400203CB2 /* Imgur.xcdatamodeld in Sources */,
 				495ED027215F881400203CB2 /* ViewController.swift in Sources */,
 				495ED046215FA30B00203CB2 /* Dispatcher.swift in Sources */,
+				495ED04D215FD34F00203CB2 /* Basic.swift in Sources */,
 				495ED044215F918900203CB2 /* Request.swift in Sources */,
 				495ED042215F8E0D00203CB2 /* Environment.swift in Sources */,
 				495ED025215F881400203CB2 /* AppDelegate.swift in Sources */,
