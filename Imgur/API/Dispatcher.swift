@@ -40,8 +40,19 @@ class Dispatcher: DispatcherProtocol {
             parameters: request.parameters,
             encoding: request.parametersEncoding,
             headers: environment.headers
-        ).responseJSON { (response) in
-                print(response)
+            )
+
+            .responseData { (data) in
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                decoder.dateDecodingStrategy = JSONDecoder.DateDecodingStrategy.custom({ (decoder) -> Date in
+                    let container = try decoder.singleValueContainer()
+                    let timestamp = try container.decode(Double.self)
+                    return Date(timeIntervalSince1970: timestamp)
+                })
+                
+                let result = try? decoder.decode(Basic<Tag>.self, from: data.data!)
+                print(result.debugDescription)
         }
     }
 }
