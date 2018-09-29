@@ -21,6 +21,7 @@
 		495ED049215FB77B00203CB2 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED048215FB77B00203CB2 /* Image.swift */; };
 		495ED04B215FC05D00203CB2 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED04A215FC05D00203CB2 /* Tag.swift */; };
 		495ED04D215FD34F00203CB2 /* Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED04C215FD34F00203CB2 /* Basic.swift */; };
+		495ED04F215FD8B100203CB2 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED04E215FD8B100203CB2 /* Album.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		495ED048215FB77B00203CB2 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		495ED04A215FC05D00203CB2 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		495ED04C215FD34F00203CB2 /* Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basic.swift; sourceTree = "<group>"; };
+		495ED04E215FD8B100203CB2 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				495ED048215FB77B00203CB2 /* Image.swift */,
 				495ED04A215FC05D00203CB2 /* Tag.swift */,
 				495ED04C215FD34F00203CB2 /* Basic.swift */,
+				495ED04E215FD8B100203CB2 /* Album.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				495ED044215F918900203CB2 /* Request.swift in Sources */,
 				495ED042215F8E0D00203CB2 /* Environment.swift in Sources */,
 				495ED025215F881400203CB2 /* AppDelegate.swift in Sources */,
+				495ED04F215FD8B100203CB2 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
