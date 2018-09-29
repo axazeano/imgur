@@ -24,6 +24,8 @@
 		495ED04F215FD8B100203CB2 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED04E215FD8B100203CB2 /* Album.swift */; };
 		495ED051215FEFC200203CB2 /* GalleryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED050215FEFC200203CB2 /* GalleryImage.swift */; };
 		495ED053215FF32000203CB2 /* GalleryAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED052215FF32000203CB2 /* GalleryAlbum.swift */; };
+		495ED055215FF57E00203CB2 /* CustomGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED054215FF57E00203CB2 /* CustomGallery.swift */; };
+		495ED05721600D0700203CB2 /* GalleryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED05621600D0700203CB2 /* GalleryItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		495ED04E215FD8B100203CB2 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		495ED050215FEFC200203CB2 /* GalleryImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryImage.swift; sourceTree = "<group>"; };
 		495ED052215FF32000203CB2 /* GalleryAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryAlbum.swift; sourceTree = "<group>"; };
+		495ED054215FF57E00203CB2 /* CustomGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGallery.swift; sourceTree = "<group>"; };
+		495ED05621600D0700203CB2 /* GalleryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				495ED04E215FD8B100203CB2 /* Album.swift */,
 				495ED050215FEFC200203CB2 /* GalleryImage.swift */,
 				495ED052215FF32000203CB2 /* GalleryAlbum.swift */,
+				495ED054215FF57E00203CB2 /* CustomGallery.swift */,
+				495ED05621600D0700203CB2 /* GalleryItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -226,8 +232,10 @@
 				495ED051215FEFC200203CB2 /* GalleryImage.swift in Sources */,
 				495ED02D215F881400203CB2 /* Imgur.xcdatamodeld in Sources */,
 				495ED027215F881400203CB2 /* ViewController.swift in Sources */,
+				495ED055215FF57E00203CB2 /* CustomGallery.swift in Sources */,
 				495ED046215FA30B00203CB2 /* Dispatcher.swift in Sources */,
 				495ED04D215FD34F00203CB2 /* Basic.swift in Sources */,
+				495ED05721600D0700203CB2 /* GalleryItem.swift in Sources */,
 				495ED044215F918900203CB2 /* Request.swift in Sources */,
 				495ED042215F8E0D00203CB2 /* Environment.swift in Sources */,
 				495ED025215F881400203CB2 /* AppDelegate.swift in Sources */,
