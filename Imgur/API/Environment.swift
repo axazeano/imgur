@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 final class Environment {
     /// Name of the Environment
@@ -16,7 +17,7 @@ final class Environment {
     let host: String
     
     /// HTTP headers
-    var headers: [String: Any] = [:]
+    var headers: HTTPHeaders = [:]
     
     /// Cache policy
     var cachePolicy: URLRequest.CachePolicy = .returnCacheDataDontLoad
