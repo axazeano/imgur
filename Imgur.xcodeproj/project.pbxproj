@@ -30,6 +30,7 @@
 		49B75AA221655C3D00DF2F8F /* FailableDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B75AA121655C3D00DF2F8F /* FailableDecodable.swift */; };
 		49B75AA42165647200DF2F8F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B75AA32165647200DF2F8F /* Message.swift */; };
 		49B75AA62165655E00DF2F8F /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B75AA52165655E00DF2F8F /* Conversation.swift */; };
+		49B75AA82165672B00DF2F8F /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B75AA72165672B00DF2F8F /* Account.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		49B75AA121655C3D00DF2F8F /* FailableDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailableDecodable.swift; sourceTree = "<group>"; };
 		49B75AA32165647200DF2F8F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		49B75AA52165655E00DF2F8F /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		49B75AA72165672B00DF2F8F /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				49B75AA121655C3D00DF2F8F /* FailableDecodable.swift */,
 				49B75AA32165647200DF2F8F /* Message.swift */,
 				49B75AA52165655E00DF2F8F /* Conversation.swift */,
+				49B75AA72165672B00DF2F8F /* Account.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				495ED044215F918900203CB2 /* Request.swift in Sources */,
 				495ED042215F8E0D00203CB2 /* Environment.swift in Sources */,
 				495ED025215F881400203CB2 /* AppDelegate.swift in Sources */,
+				49B75AA82165672B00DF2F8F /* Account.swift in Sources */,
 				495ED04F215FD8B100203CB2 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
