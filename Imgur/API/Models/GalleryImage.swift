@@ -89,20 +89,20 @@ struct GalleryImage: Codable {
     let accountId: Int?
     
     /// Upvotes for the image
-    let ups: Int?
+    let ups: Int
     
     /// Number of downvotes for the image
-    let downs: Int?
+    let downs: Int
     
     /// Upvotes minus downvotes
-    let points: Int?
+    let points: Int
     
     /// Imgur popularity score
-    let score: Int?
+    let score: Int
     
     /// If it's an album or not
-    let isAlbum: Bool?
+    let isAlbum: Bool
     
     /// Indicates if the image is in the most viral gallery or not.
-    let inMostViral: Bool?
+    let inMostViral: Bool
 }

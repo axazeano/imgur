@@ -25,8 +25,5 @@ enum GalleryItem: Decodable {
                 debugDescription: "Can't decode value"
             )
         }
-        
-        
-
     }
 }

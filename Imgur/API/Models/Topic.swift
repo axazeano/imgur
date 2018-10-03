@@ -14,8 +14,8 @@ struct Topic: Decodable {
     let description: String?
     let css: String?
     let ephemeral: Bool
-    let topPost: GalleryItem?
-    let heroImage: Image?
+    let topPost: FailableDecodable<GalleryItem>?
+    let heroImage: FailableDecodable<Image>?
     let isHero: Bool
     
     enum CodingKeys: String, CodingKey {

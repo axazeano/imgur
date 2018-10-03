@@ -9,7 +9,7 @@
 import Foundation
 
 /// The data model formatted for gallery albums.
-struct GalleryAlbum: Codable {
+struct GalleryAlbum: Decodable {
     
     /// The ID for the image
     let id: String
@@ -87,7 +87,7 @@ struct GalleryAlbum: Codable {
     let imagesCount: Int
     
     /// An array of all the images in the album (only available when requesting the direct album)
-    let images: [Image]
+    let images: [FailableDecodable<Image>]
     
     /// Indicates if the album is in the most viral gallery or not.
     let inMostViral: Bool
