@@ -28,6 +28,7 @@
 		495ED05721600D0700203CB2 /* GalleryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED05621600D0700203CB2 /* GalleryItem.swift */; };
 		495ED05921601D6A00203CB2 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED05821601D6A00203CB2 /* Topic.swift */; };
 		49B75AA221655C3D00DF2F8F /* FailableDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B75AA121655C3D00DF2F8F /* FailableDecodable.swift */; };
+		49B75AA42165647200DF2F8F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B75AA32165647200DF2F8F /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		495ED05621600D0700203CB2 /* GalleryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryItem.swift; sourceTree = "<group>"; };
 		495ED05821601D6A00203CB2 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		49B75AA121655C3D00DF2F8F /* FailableDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailableDecodable.swift; sourceTree = "<group>"; };
+		49B75AA32165647200DF2F8F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				495ED05621600D0700203CB2 /* GalleryItem.swift */,
 				495ED05821601D6A00203CB2 /* Topic.swift */,
 				49B75AA121655C3D00DF2F8F /* FailableDecodable.swift */,
+				49B75AA32165647200DF2F8F /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				495ED04B215FC05D00203CB2 /* Tag.swift in Sources */,
 				495ED05921601D6A00203CB2 /* Topic.swift in Sources */,
 				495ED049215FB77B00203CB2 /* Image.swift in Sources */,
+				49B75AA42165647200DF2F8F /* Message.swift in Sources */,
 				495ED053215FF32000203CB2 /* GalleryAlbum.swift in Sources */,
 				495ED051215FEFC200203CB2 /* GalleryImage.swift in Sources */,
 				49B75AA221655C3D00DF2F8F /* FailableDecodable.swift in Sources */,
