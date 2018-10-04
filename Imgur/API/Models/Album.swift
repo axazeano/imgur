@@ -17,8 +17,8 @@ struct Album: Codable {
     /// The title of the album in the gallery
     let title: String
     
-    /// The title of the album in the gallery
-    let description: String
+    /// OPTIONAL: The title of the album in the gallery
+    let description: String?
     
     /// Time inserted into the gallery, epoch time
     let datetime: Date
