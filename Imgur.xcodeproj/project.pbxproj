@@ -27,10 +27,14 @@
 		495ED055215FF57E00203CB2 /* CustomGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED054215FF57E00203CB2 /* CustomGallery.swift */; };
 		495ED05721600D0700203CB2 /* GalleryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED05621600D0700203CB2 /* GalleryItem.swift */; };
 		495ED05921601D6A00203CB2 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED05821601D6A00203CB2 /* Topic.swift */; };
+		495EF53F2166B5B700318F6E /* AlbumRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495EF53E2166B5B700318F6E /* AlbumRequests.swift */; };
+		495EF5422166B7A800318F6E /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495EF5412166B7A800318F6E /* Privacy.swift */; };
 		49B75AA221655C3D00DF2F8F /* FailableDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B75AA121655C3D00DF2F8F /* FailableDecodable.swift */; };
 		49B75AA42165647200DF2F8F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B75AA32165647200DF2F8F /* Message.swift */; };
 		49B75AA62165655E00DF2F8F /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B75AA52165655E00DF2F8F /* Conversation.swift */; };
 		49B75AA82165672B00DF2F8F /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B75AA72165672B00DF2F8F /* Account.swift */; };
+		49B75AAB2165689B00DF2F8F /* ImgurAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B75AAA2165689B00DF2F8F /* ImgurAPI.swift */; };
+		49B75AAD21656BF300DF2F8F /* GalleryRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B75AAC21656BF300DF2F8F /* GalleryRequests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,10 +60,14 @@
 		495ED054215FF57E00203CB2 /* CustomGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGallery.swift; sourceTree = "<group>"; };
 		495ED05621600D0700203CB2 /* GalleryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryItem.swift; sourceTree = "<group>"; };
 		495ED05821601D6A00203CB2 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		495EF53E2166B5B700318F6E /* AlbumRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRequests.swift; sourceTree = "<group>"; };
+		495EF5412166B7A800318F6E /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
 		49B75AA121655C3D00DF2F8F /* FailableDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailableDecodable.swift; sourceTree = "<group>"; };
 		49B75AA32165647200DF2F8F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		49B75AA52165655E00DF2F8F /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 		49B75AA72165672B00DF2F8F /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		49B75AAA2165689B00DF2F8F /* ImgurAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurAPI.swift; sourceTree = "<group>"; };
+		49B75AAC21656BF300DF2F8F /* GalleryRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryRequests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,7 @@
 		495ED040215F8DE700203CB2 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				49B75AA92165688000DF2F8F /* Requests */,
 				495ED047215FB76A00203CB2 /* Models */,
 				495ED041215F8E0D00203CB2 /* Environment.swift */,
 				495ED043215F918900203CB2 /* Request.swift */,
@@ -129,6 +138,7 @@
 		495ED047215FB76A00203CB2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				495EF5402166B79B00318F6E /* Enums */,
 				495ED048215FB77B00203CB2 /* Image.swift */,
 				495ED04A215FC05D00203CB2 /* Tag.swift */,
 				495ED04C215FD34F00203CB2 /* Basic.swift */,
@@ -144,6 +154,24 @@
 				49B75AA72165672B00DF2F8F /* Account.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		495EF5402166B79B00318F6E /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				495EF5412166B7A800318F6E /* Privacy.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		49B75AA92165688000DF2F8F /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				49B75AAA2165689B00DF2F8F /* ImgurAPI.swift */,
+				495EF53E2166B5B700318F6E /* AlbumRequests.swift */,
+				49B75AAC21656BF300DF2F8F /* GalleryRequests.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,10 +282,14 @@
 				495ED046215FA30B00203CB2 /* Dispatcher.swift in Sources */,
 				495ED04D215FD34F00203CB2 /* Basic.swift in Sources */,
 				49B75AA62165655E00DF2F8F /* Conversation.swift in Sources */,
+				49B75AAB2165689B00DF2F8F /* ImgurAPI.swift in Sources */,
 				495ED05721600D0700203CB2 /* GalleryItem.swift in Sources */,
 				495ED044215F918900203CB2 /* Request.swift in Sources */,
+				49B75AAD21656BF300DF2F8F /* GalleryRequests.swift in Sources */,
 				495ED042215F8E0D00203CB2 /* Environment.swift in Sources */,
 				495ED025215F881400203CB2 /* AppDelegate.swift in Sources */,
+				495EF53F2166B5B700318F6E /* AlbumRequests.swift in Sources */,
+				495EF5422166B7A800318F6E /* Privacy.swift in Sources */,
 				49B75AA82165672B00DF2F8F /* Account.swift in Sources */,
 				495ED04F215FD8B100203CB2 /* Album.swift in Sources */,
 			);

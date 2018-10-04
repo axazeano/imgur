@@ -1,5 +1,5 @@
 //
-//  Gallery.swift
+//  ImgurAPI.swift
 //  Imgur
 //
 //  Created by Владимир Кубанцев on 04/10/2018.
@@ -7,3 +7,8 @@
 //
 
 import Foundation
+import Alamofire
+
+final class ImgurAPI {
+
+}
