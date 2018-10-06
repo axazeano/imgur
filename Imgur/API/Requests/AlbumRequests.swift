@@ -14,7 +14,7 @@ extension ImgurAPI {
         case getAlbum(albumHash: String)
         case getAlbumImages(albumHash: String)
         case getAlbumImage(albumHash: String, imageHash: String)
-        
+        case albumCreation(parameters: AlbumRequestsParameters.AlbumCreation)
         
         var path: String {
             switch self {
@@ -24,6 +24,8 @@ extension ImgurAPI {
                 return "album/\(albumHash)/images"
             case .getAlbumImage(let albumHash, let imageHash):
                 return "album/\(albumHash)/image/\(imageHash)"
+            case .albumCreation:
+                return "album"
             }
         }
         
@@ -31,6 +33,8 @@ extension ImgurAPI {
             switch self {
             case .getAlbum, .getAlbumImage, .getAlbumImages:
                 return .get
+            case .albumCreation:
+                return .post
             }
         }
         
@@ -38,6 +42,8 @@ extension ImgurAPI {
             switch self {
             case .getAlbum, .getAlbumImage, .getAlbumImages:
                 return nil
+            case .albumCreation(let parameters):
+                return parameters.parameters
             }
         }
         
@@ -45,11 +51,54 @@ extension ImgurAPI {
             switch self {
             case .getAlbum, .getAlbumImage, .getAlbumImages:
                 return nil
+            case .albumCreation:
+                return nil
             }
         }
         
         var parametersEncoding: ParameterEncoding {
-            return URLEncoding.default
+            switch self {
+            case .getAlbum, .getAlbumImage, .getAlbumImages:
+                return URLEncoding.default
+            case .albumCreation:
+                return URLEncoding.httpBody
+            }
+        }
+    }
+}
+
+extension ImgurAPI {
+    struct AlbumRequestsParameters {
+        struct AlbumCreation {
+            
+            /// The image ids that you want to be included in the album.
+            let ids: [String]?
+            
+            /// The deletehashes of the images that you want to be included in the album.
+            let deletehashes: [String]?
+            
+            /// The title of the album
+            let title: String?
+            
+            /// The description of the album
+            let description: String?
+            
+            /// Sets the privacy level of the album. Values are : `public` | `hidden` | `secret`. Defaults to user's privacy settings for logged in users.
+            let privacy: Privacy?
+            
+            /// The ID of an image that you want to be the cover of the album
+            let cover: String?
+            
+            var parameters: Parameters {
+                return [
+                    "ids": ids,
+                    "deletehashes": deletehashes,
+                    "title": title,
+                    "description": description,
+                    "privacy": privacy?.rawValue,
+                    "cover": cover
+                ].filter { $0.value != nil }
+            }
         }
     }
 }

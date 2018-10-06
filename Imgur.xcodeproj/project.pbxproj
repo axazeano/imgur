@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49126E6C2168DC7600C1AB45 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49126E6B2168DC7600C1AB45 /* ErrorResponse.swift */; };
+		49126E6E2168EB6F00C1AB45 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49126E6D2168EB6F00C1AB45 /* Empty.swift */; };
 		495ED025215F881400203CB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED024215F881400203CB2 /* AppDelegate.swift */; };
 		495ED027215F881400203CB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED026215F881400203CB2 /* ViewController.swift */; };
 		495ED02A215F881400203CB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495ED028215F881400203CB2 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49126E6B2168DC7600C1AB45 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		49126E6D2168EB6F00C1AB45 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
 		495ED021215F881400203CB2 /* Imgur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imgur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495ED024215F881400203CB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		495ED026215F881400203CB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 				49B75AA32165647200DF2F8F /* Message.swift */,
 				49B75AA52165655E00DF2F8F /* Conversation.swift */,
 				49B75AA72165672B00DF2F8F /* Account.swift */,
+				49126E6B2168DC7600C1AB45 /* ErrorResponse.swift */,
+				49126E6D2168EB6F00C1AB45 /* Empty.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 				495ED049215FB77B00203CB2 /* Image.swift in Sources */,
 				49B75AA42165647200DF2F8F /* Message.swift in Sources */,
 				495ED053215FF32000203CB2 /* GalleryAlbum.swift in Sources */,
+				49126E6C2168DC7600C1AB45 /* ErrorResponse.swift in Sources */,
 				495ED051215FEFC200203CB2 /* GalleryImage.swift in Sources */,
 				49B75AA221655C3D00DF2F8F /* FailableDecodable.swift in Sources */,
 				495ED02D215F881400203CB2 /* Imgur.xcdatamodeld in Sources */,
@@ -285,6 +292,7 @@
 				49B75AAB2165689B00DF2F8F /* ImgurAPI.swift in Sources */,
 				495ED05721600D0700203CB2 /* GalleryItem.swift in Sources */,
 				495ED044215F918900203CB2 /* Request.swift in Sources */,
+				49126E6E2168EB6F00C1AB45 /* Empty.swift in Sources */,
 				49B75AAD21656BF300DF2F8F /* GalleryRequests.swift in Sources */,
 				495ED042215F8E0D00203CB2 /* Environment.swift in Sources */,
 				495ED025215F881400203CB2 /* AppDelegate.swift in Sources */,

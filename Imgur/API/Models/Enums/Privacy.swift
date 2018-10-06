@@ -8,8 +8,8 @@
 
 import Foundation
 
-enum Privacy {
-    case `public`
-    case hidden
-    case secret
+enum Privacy: String {
+    case `public` = "public"
+    case hidden = "hidden"
+    case secret = "secret"
 }
