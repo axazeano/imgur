@@ -12,6 +12,10 @@ import Alamofire
 struct ResponseHandler<T> where T: Decodable {
     let decoder: JSONDecoder
     
+    init(decoder: JSONDecoder) {
+        self.decoder = decoder
+    }
+    
     func handle(
         response: DataResponse<Data>,
         onSuccess: @escaping (_ parsedObjet: T) -> Void,
