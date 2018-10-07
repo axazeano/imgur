@@ -8,15 +8,28 @@
 
 import UIKit
 import CoreData
+import Alamofire
+import AuthenticationServices
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let authService = AuthService()
+        
+        if let savedAuthData = authService.getAuthData() {
+            print(savedAuthData)
+        } else {
+            authService.performWebAuth(onSuccess: { (auth) in
+                print(auth)
+            }) { (error) in
+                print(error)
+            }
+        }
+        
         return true
     }
 

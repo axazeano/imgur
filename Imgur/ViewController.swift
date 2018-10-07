@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import AuthenticationServices
 
 class ViewController: UIViewController {
-
+    var webAuthSession: ASWebAuthenticationSession?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+//        let authURL = URL(string: "https://api.imgur.com/oauth2/authorize?client_id=*****&response_type=token")!
+//        
+//        webAuthSession = ASWebAuthenticationSession(
+//            url: authURL,
+//            callbackURLScheme: "https://imgur.com"
+//        ) { (url, error) in
+//                print(url)
+//        }
+//        webAuthSession?.start()
     }
 
 

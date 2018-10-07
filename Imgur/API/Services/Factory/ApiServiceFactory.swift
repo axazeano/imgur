@@ -19,7 +19,7 @@ final class ApiServiceFactory {
         environment = Environment(
             name: "test",
             host: "https://api.imgur.com/3",
-            headers: ["Authorization": "Client-ID 9a6574ec5eb7228"]
+            headers: ["Authorization": "Client-ID ****"]
         )
         dispatcher = Dispatcher(environment: environment)
         decoder = JSONDecoder()

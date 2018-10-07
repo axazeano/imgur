@@ -37,6 +37,8 @@
 		495ED05921601D6A00203CB2 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED05821601D6A00203CB2 /* Topic.swift */; };
 		495EF53F2166B5B700318F6E /* AlbumRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495EF53E2166B5B700318F6E /* AlbumRequests.swift */; };
 		495EF5422166B7A800318F6E /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495EF5412166B7A800318F6E /* Privacy.swift */; };
+		49B74D33216A9E4E00939E77 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B74D32216A9E4E00939E77 /* AuthService.swift */; };
+		49B74D35216A9EB500939E77 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B74D34216A9EB500939E77 /* Auth.swift */; };
 		49B75AA221655C3D00DF2F8F /* FailableDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B75AA121655C3D00DF2F8F /* FailableDecodable.swift */; };
 		49B75AA42165647200DF2F8F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B75AA32165647200DF2F8F /* Message.swift */; };
 		49B75AA62165655E00DF2F8F /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B75AA52165655E00DF2F8F /* Conversation.swift */; };
@@ -78,6 +80,9 @@
 		495ED05821601D6A00203CB2 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		495EF53E2166B5B700318F6E /* AlbumRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRequests.swift; sourceTree = "<group>"; };
 		495EF5412166B7A800318F6E /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
+		49B74D31216A978100939E77 /* Imgur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Imgur.entitlements; sourceTree = "<group>"; };
+		49B74D32216A9E4E00939E77 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		49B74D34216A9EB500939E77 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		49B75AA121655C3D00DF2F8F /* FailableDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailableDecodable.swift; sourceTree = "<group>"; };
 		49B75AA32165647200DF2F8F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		49B75AA52165655E00DF2F8F /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				49126E74216A0AD500C1AB45 /* AlbumService.swift */,
+				49B74D32216A9E4E00939E77 /* AuthService.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -154,6 +160,7 @@
 		495ED023215F881400203CB2 /* Imgur */ = {
 			isa = PBXGroup;
 			children = (
+				49B74D31216A978100939E77 /* Imgur.entitlements */,
 				495ED040215F8DE700203CB2 /* API */,
 				495ED024215F881400203CB2 /* AppDelegate.swift */,
 				495ED026215F881400203CB2 /* ViewController.swift */,
@@ -208,6 +215,7 @@
 				49B75AA72165672B00DF2F8F /* Account.swift */,
 				49126E6B2168DC7600C1AB45 /* ErrorResponse.swift */,
 				49126E6D2168EB6F00C1AB45 /* Empty.swift */,
+				49B74D34216A9EB500939E77 /* Auth.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -263,6 +271,11 @@
 				TargetAttributes = {
 					495ED020215F881400203CB2 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -340,7 +353,9 @@
 				495ED027215F881400203CB2 /* ViewController.swift in Sources */,
 				495ED055215FF57E00203CB2 /* CustomGallery.swift in Sources */,
 				495ED046215FA30B00203CB2 /* Dispatcher.swift in Sources */,
+				49B74D33216A9E4E00939E77 /* AuthService.swift in Sources */,
 				49126E79216A0B7000C1AB45 /* AlbumServiceProtocol.swift in Sources */,
+				49B74D35216A9EB500939E77 /* Auth.swift in Sources */,
 				495ED04D215FD34F00203CB2 /* Basic.swift in Sources */,
 				49126E7B216A16D400C1AB45 /* BaseNetworkService.swift in Sources */,
 				49B75AA62165655E00DF2F8F /* Conversation.swift in Sources */,
@@ -501,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Imgur/Imgur.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P8L6K7JNJ7;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -523,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Imgur/Imgur.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P8L6K7JNJ7;
 				FRAMEWORK_SEARCH_PATHS = (
