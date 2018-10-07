@@ -22,8 +22,15 @@ final class Environment {
     /// Cache policy
     var cachePolicy: URLRequest.CachePolicy = .returnCacheDataDontLoad
     
-    init(name: String, host: String) {
+    init(
+        name: String,
+        host: String,
+        headers: HTTPHeaders = [:],
+        cachePolicy: URLRequest.CachePolicy = .returnCacheDataDontLoad
+    ) {
         self.name = name
         self.host = host
+        self.headers = headers
+        self.cachePolicy = cachePolicy
     }
 }
