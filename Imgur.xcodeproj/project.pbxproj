@@ -11,6 +11,9 @@
 		49126E6E2168EB6F00C1AB45 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49126E6D2168EB6F00C1AB45 /* Empty.swift */; };
 		49126E702169FBC800C1AB45 /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49126E6F2169FBC800C1AB45 /* ResponseHandler.swift */; };
 		49126E72216A016E00C1AB45 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49126E71216A016E00C1AB45 /* Errors.swift */; };
+		49126E75216A0AD500C1AB45 /* AlbumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49126E74216A0AD500C1AB45 /* AlbumService.swift */; };
+		49126E79216A0B7000C1AB45 /* AlbumServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49126E78216A0B7000C1AB45 /* AlbumServiceProtocol.swift */; };
+		49126E7B216A16D400C1AB45 /* BaseNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49126E7A216A16D400C1AB45 /* BaseNetworkService.swift */; };
 		495ED025215F881400203CB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED024215F881400203CB2 /* AppDelegate.swift */; };
 		495ED027215F881400203CB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED026215F881400203CB2 /* ViewController.swift */; };
 		495ED02A215F881400203CB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495ED028215F881400203CB2 /* Main.storyboard */; };
@@ -46,6 +49,9 @@
 		49126E6D2168EB6F00C1AB45 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
 		49126E6F2169FBC800C1AB45 /* ResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
 		49126E71216A016E00C1AB45 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		49126E74216A0AD500C1AB45 /* AlbumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumService.swift; sourceTree = "<group>"; };
+		49126E78216A0B7000C1AB45 /* AlbumServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumServiceProtocol.swift; sourceTree = "<group>"; };
+		49126E7A216A16D400C1AB45 /* BaseNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkService.swift; sourceTree = "<group>"; };
 		495ED021215F881400203CB2 /* Imgur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imgur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495ED024215F881400203CB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		495ED026215F881400203CB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +96,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49126E73216A0ABA00C1AB45 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				49126E77216A0AF400C1AB45 /* Implementations */,
+				49126E76216A0AEB00C1AB45 /* Protocols */,
+				49126E7A216A16D400C1AB45 /* BaseNetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		49126E76216A0AEB00C1AB45 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				49126E78216A0B7000C1AB45 /* AlbumServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		49126E77216A0AF400C1AB45 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				49126E74216A0AD500C1AB45 /* AlbumService.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
 		495ED018215F881400203CB2 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +166,7 @@
 		495ED040215F8DE700203CB2 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				49126E73216A0ABA00C1AB45 /* Services */,
 				49B75AA92165688000DF2F8F /* Requests */,
 				495ED047215FB76A00203CB2 /* Models */,
 				495ED041215F8E0D00203CB2 /* Environment.swift */,
@@ -284,6 +317,7 @@
 				495ED04B215FC05D00203CB2 /* Tag.swift in Sources */,
 				495ED05921601D6A00203CB2 /* Topic.swift in Sources */,
 				495ED049215FB77B00203CB2 /* Image.swift in Sources */,
+				49126E75216A0AD500C1AB45 /* AlbumService.swift in Sources */,
 				49126E702169FBC800C1AB45 /* ResponseHandler.swift in Sources */,
 				49B75AA42165647200DF2F8F /* Message.swift in Sources */,
 				495ED053215FF32000203CB2 /* GalleryAlbum.swift in Sources */,
@@ -295,7 +329,9 @@
 				495ED027215F881400203CB2 /* ViewController.swift in Sources */,
 				495ED055215FF57E00203CB2 /* CustomGallery.swift in Sources */,
 				495ED046215FA30B00203CB2 /* Dispatcher.swift in Sources */,
+				49126E79216A0B7000C1AB45 /* AlbumServiceProtocol.swift in Sources */,
 				495ED04D215FD34F00203CB2 /* Basic.swift in Sources */,
+				49126E7B216A16D400C1AB45 /* BaseNetworkService.swift in Sources */,
 				49B75AA62165655E00DF2F8F /* Conversation.swift in Sources */,
 				49B75AAB2165689B00DF2F8F /* ImgurAPI.swift in Sources */,
 				495ED05721600D0700203CB2 /* GalleryItem.swift in Sources */,
