@@ -13,7 +13,7 @@ class BaseNetworkService {
     let environment: Environment
     let decoder: JSONDecoder
     
-    init(dispatcher: Dispatcher, environment: Environment, decoder: JSONDecoder) {
+    public init(dispatcher: Dispatcher, environment: Environment, decoder: JSONDecoder) {
         self.dispatcher = dispatcher
         self.environment = environment
         self.decoder = decoder

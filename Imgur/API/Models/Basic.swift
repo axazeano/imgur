@@ -26,6 +26,15 @@ enum BasicData<T>: Decodable where T: Decodable {
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
+        do {
+            let data = try container.decode(T.self)
+            self = .data(data)
+        } catch {
+            print(error)
+        }
+        
+        
+//        let container = try decoder.singleValueContainer()
         if let error = try? container.decode(ErrorResponse.self) {
             self = .error(error)
         } else if let data = try? container.decode(T.self) {
