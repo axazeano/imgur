@@ -9,7 +9,7 @@
 import Foundation
 
 struct Basic<T>: Decodable where T: Decodable {
-    let data: BasicData<T>?
+    let data: BasicData<T>
     let success: Bool
     let status: Int
     

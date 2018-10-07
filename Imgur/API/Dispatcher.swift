@@ -9,8 +9,13 @@
 import Foundation
 import Alamofire
 
-typealias APIRequestSuccess = (_ data: Decodable?) -> Void
-typealias APIRequestFailed = (_ error: Error) -> Void
+typealias APIRequestSuccess = (_ data: Decodable) -> Void
+typealias APIRequestFailed = (_ error: ErrorResponse) -> Void
+typealias RequestHandler = (
+    _ data: Data,
+    _ onSuccessHandler: APIRequestSuccess,
+    _ onFailureHandler: APIRequestFailed
+    ) -> Void
 
 protocol DispatcherProtocol {
     var environment: Environment { get set }
@@ -30,6 +35,7 @@ class Dispatcher: DispatcherProtocol {
     
     func execute(
         request: Request,
+        
         onSuccess: APIRequestSuccess,
         onError: APIRequestFailed
     ){
@@ -43,6 +49,7 @@ class Dispatcher: DispatcherProtocol {
             )
 
             .responseData { (data) in
+                
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 decoder.dateDecodingStrategy = JSONDecoder.DateDecodingStrategy.custom({ (decoder) -> Date in
@@ -51,8 +58,12 @@ class Dispatcher: DispatcherProtocol {
                     return Date(timeIntervalSince1970: timestamp)
                 })
                 
-                let result = try? decoder.decode(Basic<Tag>.self, from: data.data!)
-                print(result.debugDescription)
+                do {
+                    let result = try decoder.decode(Basic<Empty>.self, from: data.data!)
+                    print(result)
+                } catch {
+                    print(error)
+                }
         }
     }
 }
