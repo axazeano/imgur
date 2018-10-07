@@ -33,10 +33,10 @@ struct Album: Codable {
     let coverHeight: Int
     
     /// The account username or null if it's anonymous.
-    let accountURL: String
+    let accountUrl: String?
     
     /// The account ID or null if it's anonymous.
-    let accountID: String
+    let accountId: Int?
     
     /// The privacy level of the album, you can only view public if not logged in as album owner
     let privacy: String
@@ -54,13 +54,13 @@ struct Album: Codable {
     let favorite: Bool
     
     /// Indicates if the image has been marked as nsfw or not. Defaults to null if information is not available.
-    let nsfw: Bool
+    let nsfw: Bool?
     
     /// If the image has been categorized by our backend then this will contain the section the image belongs in. (funny, cats, adviceanimals, wtf, etc)
-    let section: String
+    let section: String?
     
     /// Order number of the album on the user's album page (defaults to 0 if their albums haven't been reordered)
-    let order: Int
+//    let order: Int
     
     /// OPTIONAL, the deletehash, if you're logged in as the album owner
     let deletehash: String?

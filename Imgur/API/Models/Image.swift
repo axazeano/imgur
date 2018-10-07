@@ -13,7 +13,7 @@ struct Image: Codable {
     let id: String
     
     /// The title of the image.
-    let title: String
+    let title: String?
     
     /// OPTIONAL, Description of the image.
     let description: String?
